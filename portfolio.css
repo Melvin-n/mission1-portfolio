@@ -122,6 +122,40 @@ p{
     align-items: center;
 }
 
+#emailform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#textbox{
+    resize: none;
+    width: 20em;
+    height: 10em;
+    border: 5px #b22222 solid;
+    font-family: 'Urbanist', sans-serif;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+#submit-button{
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bolder;
+    background-color: black;
+    border: 2px #b22222 solid;
+    color:whitesmoke;
+
+}
+
+#submit-button:active{
+    border: 1.5px #b22222 solid;
+}
 a{
     text-decoration: none;
     color: #b22222;
