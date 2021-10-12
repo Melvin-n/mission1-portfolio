@@ -1,0 +1,160 @@
+body{
+    font-family: 'Urbanist', sans-serif;
+    color: whitesmoke;
+    background-color: black;
+
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+#main h1{
+    font-size: 6rem;
+    justify-self: flex-start;
+    animation: slide-in 0.8s;
+    text-decoration: underline;
+    text-decoration-color: #b22222;   
+
+}
+
+
+#sitenavbar{
+
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
+    justify-items: space-between;
+    padding: 0px;
+    animation: slide-in 0.8s;
+}
+
+#sitenavbar a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: #b22222;
+}
+
+
+#aboutme{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+p{
+    font-size: 30px;
+}
+#projects{
+    display: flex;
+    justify-content: center;
+}
+
+
+#projectshead{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#profilepic{
+    border-radius: 50%;
+    width: 200px;
+    border: 2px #b22222 solid;
+    padding: 5px;
+    animation: slide-in-right 0.8s;
+}
+
+
+.navitem a{
+    text-decoration: none;
+    color:white;
+    padding: 0 1em;
+    animation: slide-in 0.8s;
+}
+
+.navitem a:hover{
+    background-color: black;
+    color:#b22222;
+}
+
+#projectimages{
+    display: flex;
+    justify-content: space-between;
+}
+.project-img{
+    width: 20em;
+    border: 2px #b22222 solid;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    filter: brightness(80%);
+    
+}
+
+.project-img:hover{
+    filter: brightness(100%);
+}
+
+#projectshead p {
+    font-size: 30px;
+}
+
+#contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #b22222;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+@keyframes slide-in{
+    0%{transform: translateX(-800px);}
+    100%{transform: translateX(0px);}
+
+}
+
+@keyframes slide-in-right{
+    0%{transform: translateX(800px);}
+    100%{transform: translateX(0px);}
+}
+
+@media screen and (max-width: 768px) {
+    #sitenavbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        margin-top: -50px;
+
+    }
+
+    #projectimages{
+        flex-wrap: wrap;
+    }
+}
