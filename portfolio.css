@@ -138,6 +138,7 @@ p{
     background-color: whitesmoke;
     opacity: 0.9;
     font-size: 15px;
+    outline:none;
 }
 
 #submit-button{
